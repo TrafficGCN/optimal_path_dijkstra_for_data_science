@@ -1,3 +1,4 @@
+import os
 import networkx as nx
 import plotly.graph_objects as go
 import osmnx as ox
@@ -147,7 +148,7 @@ def plot_map(origin_point, target_points, long, lat):
 
     # Save map in output folder
     print("Saving image to output folder...");
-    fig.write_image('output/dijkstra_map.jpg', scale=3)
+    fig.write_image(OS_PATH + '/output/dijkstra_map.jpg', scale=3)
 
     # Show the map in the web browser
     print("Generating map in browser...");
@@ -159,7 +160,8 @@ def plot_map(origin_point, target_points, long, lat):
 ##### MAIN
 
 # Data import path
-SENSORS_CSV   = 'data/geocords.csv'
+OS_PATH = os.path.dirname(os.path.realpath('__file__'))
+SENSORS_CSV   = OS_PATH + '/data/geocoordinates.csv'
 
 # Data Import
 df1 = pd.read_csv(SENSORS_CSV)
