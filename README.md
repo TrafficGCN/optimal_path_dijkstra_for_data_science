@@ -1,5 +1,7 @@
 # Plotting the Optimal Route in Python for Data Scientists using the Dijkstra Algorithm
 
+<img src="https://github.com/ThomasAFink/optimal_path_dijkstra_for_data_science/blob/main/output/dijkstra_map.jpg?raw=true" width="450" align="right">
+
 The following example uses [OSMnx](https://osmnx.readthedocs.io/en/stable/) to generate the optimal path between two geocoordinates and between one and many points and plotting the path(s) on a [Plotly](https://plotly.com/) map. This is a quick and simple example that data scientists can use to illustrate a path(s) for their professional or academic papers.
 
 A brief file structure overview of the repository is provided. The dijkstra_map.py is in the root directory. The data folder houses a list of target geocoordinates in a csv file. The out map is generated in the output folder.
