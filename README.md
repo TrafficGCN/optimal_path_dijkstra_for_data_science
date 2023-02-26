@@ -29,6 +29,7 @@ Before jumping into the code the following requirements and packages are needed 
     Python 3.10.6
     pip3 install osmnx==0.16.1 
     pip3 install geopandas==0.9.0
+    pip install shapely==1.8.0
     pip3 install -U kaleido
     pip3 install networkx
     pip3 install plotly
